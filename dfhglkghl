@@ -1,0 +1,14 @@
+warning: in the working copy of 'solution.js', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/solution.js b/solution.js[m
+[1mindex 5abf1c5..37e9549 100644[m
+[1m--- a/solution.js[m
+[1m+++ b/solution.js[m
+[36m@@ -84,7 +84,7 @@[m [mapp.delete("/posts/:id", (req, res) => {[m
+   if (index === -1) return res.status(404).json({ message: "Post not found" });[m
+ [m
+   posts.splice(index, 1);[m
+[31m-  res.json({ message: "Post deleted" });[m
+[32m+[m[32m  res.json({ message: "Post is deleted" });[m
+ });[m
+ [m
+ app.listen(port, () => {[m
