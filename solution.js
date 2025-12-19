@@ -84,7 +84,7 @@ app.delete("/posts/:id", (req, res) => {
   if (index === -1) return res.status(404).json({ message: "Post not found" });
 
   posts.splice(index, 1);
-  res.json({ message: "Post is deleted" });
+  res.json({ message: "Post deleted" });
 });
 
 app.listen(port, () => {
